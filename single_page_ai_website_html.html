@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mantram Healthcare Service</title>
+  <meta name="description" content="Mantram Healthcare Service, founded by Dr. Divisha Agrawal in Raipur, Chhattisgarh, offers physiotherapy care for musculoskeletal, neurological, cardiopulmonary, and paediatric patients." />
+  <style>
+    :root{
+      --bg:#1a1c2c;
+      --card:#23263d;
+      --muted:#cbd0df;
+      --text:#fef9ff;
+      --accent:#f7c5d9;
+      --accent-2:#ffe86e;
+      --accent-3:#3de1c6;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--accent-3);text-decoration:none}
+    img{max-width:100%;display:block}
+
+    header{position:sticky;top:0;backdrop-filter:blur(8px);background:rgba(26,28,44,.92);border-bottom:1px solid rgba(255,255,255,.08);z-index:50}
+    .nav{max-width:1100px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand img{height:44px}
+    .menu a{margin-left:18px;font-size:14px;opacity:.9}
+    .menu a:hover{opacity:1}
+
+    main{max-width:1000px;margin:0 auto;padding:40px 20px}
+    section{margin-bottom:60px}
+    h1,h2,h3{margin:0 0 12px}
+    h1{font-size:36px;color:var(--accent-3)}
+    h2{font-size:26px;color:var(--accent-2)}
+    h3{font-size:20px;color:var(--accent)}
+    p{margin:0 0 16px;color:var(--text)}
+
+    .card{background:var(--card);padding:20px;border-radius:12px;margin-bottom:20px;border:1px solid rgba(255,255,255,.08)}
+
+    .hero{position:relative;border-radius:14px;overflow:hidden;margin:24px 0 40px;border:1px solid rgba(255,255,255,.08)}
+    .hero img{width:100%;height:320px;object-fit:cover;filter:brightness(.75)}
+    .hero .overlay{position:absolute;inset:0;background:linear-gradient(90deg, rgba(61,225,198,.55), rgba(247,197,217,.35) 50%, rgba(255,232,110,.35));}
+    .hero .inner{position:absolute;inset:0;display:flex;align-items:center;gap:18px;padding:18px}
+    .hero .logo{height:64px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+    .hero .text{max-width:720px}
+    .hero h1{margin:0 0 6px}
+    .hero p{margin:0;color:var(--muted)}
+
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .testi{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:18px}
+    .testi .name{font-weight:700;color:var(--accent)}
+    .testi p{margin:8px 0 0;color:var(--muted)}
+
+    footer{padding:20px;text-align:center;font-size:14px;color:var(--muted);border-top:1px solid rgba(255,255,255,.1)}
+
+    @media (max-width:900px){
+      .testi-grid{grid-template-columns:1fr}
+      .hero img{height:220px}
+      .hero .inner{flex-direction:column;align-items:flex-start}
+      .hero .logo{height:56px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <img src="/mnt/data/WhatsApp Image 2024-08-29 at 19.02.48.jpeg" alt="Mantram Healthcare Logo">
+        <strong>Mantram Healthcare Service</strong>
+      </div>
+      <nav class="menu">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#approach">Our Approach</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Physiotherapy banner">
+      <img src="https://images.unsplash.com/photo-1604881991720-f91add269bed?q=80&w=1600&auto=format&fit=crop" alt="Physiotherapist treating a patient">
+      <div class="overlay"></div>
+      <div class="inner">
+        <img class="logo" src="/mnt/data/WhatsApp Image 2024-08-29 at 19.02.48.jpeg" alt="Mantram logo">
+        <div class="text">
+          <h1>Your recovery. Our priority.</h1>
+          <p>Evidence-based physiotherapy in Raipur for MSK, neuro, cardio-pulmonary, and paediatric care.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1>Mantram Healthcare Service</h1>
+      <div class="card">
+        <p>Founded by <strong>Dr. Divisha Agrawal</strong>, our clinic is dedicated to improving the health and quality of life of patients across all age groups. We focus on restoring strength, reducing pain, and rebuilding confidence through specialised physiotherapy care.</p>
+        <p>Mantram Healthcare Service is a trusted physiotherapy clinic located at 61, Jal Vihar Colony, Raipur, Chhattisgarh 492001. Over the years, our centre has grown into a place where modern physiotherapy meets compassionate patient care. From children with developmental needs to adults recovering from sports injuries and elderly patients living with chronic conditions, we ensure every patient receives personalised treatment.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="card">
+        <h3>Musculoskeletal (MSK) Physiotherapy</h3>
+        <p>Treatment for arthritis, back pain, frozen shoulder, and sports injuries through manual therapy, corrective exercises, and posture training.</p>
+      </div>
+      <div class="card">
+        <h3>Neurological Physiotherapy</h3>
+        <p>Rehab for patients after stroke, spinal cord injury, Parkinson’s disease, and multiple sclerosis, improving balance, coordination, and independence.</p>
+      </div>
+      <div class="card">
+        <h3>Cardiopulmonary Physiotherapy</h3>
+        <p>Support for asthma, COPD, post-COVID complications, or cardiac recovery through breathing techniques and endurance training.</p>
+      </div>
+      <div class="card">
+        <h3>Paediatric Physiotherapy</h3>
+        <p>Play-based therapy for children with cerebral palsy, delayed milestones, or congenital conditions, with strong parental guidance.</p>
+      </div>
+    </section>
+
+    <section id="approach">
+      <h2>Our Approach</h2>
+      <div class="card">
+        <p>We believe no two patients are alike. Every case starts with a detailed assessment, followed by a tailored treatment plan. By combining evidence-based physiotherapy techniques with personal care, we aim to help patients recover and prevent future issues.</p>
+        <p>We emphasise patient education, teaching posture correction, ergonomics, and simple home exercises to extend recovery beyond the clinic. We also use digital tools so patients and families can track progress effectively.</p>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testi-grid">
+        <article class="testi">
+          <div class="name">Prasad Wadake</div>
+          <p>I had persistent knee pain after long walks. The team explained every step, treated the cause, and within weeks I was back to daily routines with confidence.</p>
+        </article>
+        <article class="testi">
+          <div class="name">Deepika Sahum</div>
+          <p>My mother’s shoulder stiffness improved faster than we expected. Clear home exercises and regular reviews made a big difference.</p>
+        </article>
+        <article class="testi">
+          <div class="name">Narayana Prasad</div>
+          <p>Post-COVID breathlessness limited my activity. Their cardio-pulmonary plan and breathing training helped me regain stamina.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="card">
+        <p><strong>Mantram Healthcare Service</strong></p>
+        <p>61, Jal Vihar Colony<br>Raipur, Chhattisgarh – 492001</p>
+        <p>📞 +91 78288 93501<br>📧 <a href="mailto:info@mhhmc.com">info@mhhmc.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Mantram Healthcare Service. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
